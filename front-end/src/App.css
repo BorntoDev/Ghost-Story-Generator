@@ -1,0 +1,111 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background-color: #292e36;
+  /* เพิ่ม contrast ให้กับการ์ด */
+  color: #f5f5f5;
+  /* สีข้อความขาวเพื่อให้ contrast กับพื้นหลัง */
+}
+
+.read-the-docs {
+  color: #bbb;
+  /* ปรับให้สีอ่อนลงเล็กน้อยเพื่อให้ contrast สูงขึ้น */
+}
+
+.container {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #1c2128;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  /* เพิ่มความเข้มของเงา */
+}
+
+.button-save-speak {
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #1c2128;
+  /* ปรับสีให้ contrast ชัดเจน */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #d1d5db;
+  /* สีที่ดูสบายตาและ contrast สูงขึ้น */
+}
+
+select,
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #555;
+  /* ปรับสีขอบให้ contrast ชัดขึ้น */
+  border-radius: 5px;
+  background-color: #2e3440;
+  /* เพิ่ม contrast ของพื้นหลังอินพุต */
+  color: #eceff4;
+  /* สีข้อความขาว */
+}
+
+input[type="submit"] {
+  background-color: #ff3333;
+  /* ปรับเป็นสีแดงที่สว่างขึ้น */
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color: #cc0000;
+  /* เปลี่ยนสีเมื่อ hover ให้ contrast สูงขึ้น */
+}
+
+#result {
+  margin-top: 20px;
+  text-align: left;
+  font-weight: bold;
+  padding: 50px;
+  border: 2px solid #ff4d4d;
+  /* ทำให้ขอบสีแดงชัดขึ้น */
+  background-color: #1c1f24;
+  /* เพิ่มพื้นหลังให้ contrast กับสีข้อความ */
+  color: #ffffff;
+  /* สีข้อความขาวเพื่อ contrast ที่ชัดเจน */
+  min-height: 50px;
+  overflow: hidden;
+  max-width: 700px;
+  border-radius: 10px;
+}
